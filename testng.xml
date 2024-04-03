@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.conduit.qa.listener.TestListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/RYZEN/IdeaProjects/Angular_Automation">
+        <classes>
+            <class name="com.conduit.qa.testcases.HomePageTest">
+                <methods>
+                    <include name="postTest"/>
+                </methods>
+            </class>
+            <class name="com.conduit.qa.testcases.NewArticlePageTest">
+                <methods>
+                    <include name="publishPostTest"/>
+                </methods>
+            </class>
+            <class name="com.conduit.qa.testcases.ProfilePageTest">
+                <methods>
+                    <include name="postInProfileTest"/>
+                </methods>
+            </class>
+            <class name="com.conduit.qa.testcases.SettingsPageTest">
+                <methods>
+                    <include name="profileUpdateTest"/>
+                </methods>
+            </class>
+            <class name="com.conduit.qa.testcases.SignInPageTest">
+                <methods>
+                    <include name="signInTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
